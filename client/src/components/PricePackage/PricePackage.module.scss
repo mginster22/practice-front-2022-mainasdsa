@@ -1,0 +1,197 @@
+@import '../../common/style/colors';
+@import '../../common/style/breakpoints';
+
+.wrapper{
+  padding: 40px 0 30px;
+  .inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    .title{
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+    .card_wrapper{
+      display: flex;
+      justify-content: center;
+      max-width: 100%;
+      
+      .pink{
+        .heading_wrapper{
+          border-color:$color-pink;
+          .heading,
+          .price
+          {
+            color:$color-pink;
+          }
+        }
+        &:hover{
+          .info_box{
+            .btn_select{
+              color:$color-white;
+              background-color:$color-pink;
+              border:2px solid $color-pink;
+            }
+          }
+        }
+      }
+    
+      .gold{
+        .heading_wrapper{
+          border-color:$color-gold;
+          .heading,
+          .price,
+          .btn_select{
+            color:$color-gold;
+          }
+        }
+        &:hover{
+          .info_box{
+            .btn_select{
+              color:$color-white;
+              background-color:$color-gold;
+              border:2px solid $color-gold;
+            }
+          }
+        }
+      }
+    }
+    .card{
+      max-width: 390px;
+      padding: 0 15px;
+      opacity: 0.5;
+      &:hover{
+        opacity: 1;
+      }
+      .heading_wrapper{
+        border-width:10px;
+        border-style:solid;
+        padding: 15px;
+        &:hover{
+          box-shadow: 0 10px 10px $color-dark-grey-shadow;
+        }
+        .heading{
+          font-size: 2em;
+          text-transform: capitalize;
+          margin-bottom: 10px;
+        }
+        .text{
+          font-size: 1em;
+          margin-bottom: 70px;
+        }
+        .price{
+          text-align: right;
+          font-size: 1.7em;
+        }
+        .addList{
+          opacity: 0;
+        }
+      }
+      .item{
+        padding: 15px 0;
+        border-bottom: 1px solid $color-dark-grey-shadow;
+      }
+      .btn_select{
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 18px;
+        padding: 10px 0;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+@media screen and (max-width:760px){
+  .wrapper{
+    .inner{
+      .card_wrapper{
+        flex-direction: column;
+        justify-content: space-between;
+        .card{
+          max-width: 100%;
+          padding: 10px;
+          margin: 20px;
+          .heading_wrapper{
+            display: flex;
+            align-items: center;
+            border: none;
+            &:hover{
+              box-shadow:none;
+            }
+            .heading{
+              display: none;
+            }
+            .text{
+              margin-right: 10px;
+            }
+            .addList{
+              margin-left: 20px;
+              font-size: 2.3em;
+              font-weight: 900;
+              margin-left: auto;
+              opacity: 1;
+            }
+          }
+        }
+        .pink{
+          border:10px solid $color-pink;
+          .heading_wrapper{
+            .text{
+              margin-bottom: 0;
+              text-transform: capitalize;
+            }
+            .text,
+            .price
+            {
+              color:$color-pink;
+              font-size: 1.3em;
+            }
+            .addList{
+              color:$color-pink;
+            }
+          }
+        }
+        .gold{
+          border:10px solid $color-gold;
+          .heading_wrapper{
+            .text{
+              margin-bottom: 0;
+              text-transform: capitalize;
+            }
+            .text,
+            .price
+            {
+              color:$color-gold;
+              font-size: 1.3em;
+            }
+            .addList{
+              color:$color-gold;
+            }
+          }
+        }
+        .info_box{
+          opacity: 0;
+          height: 0;
+          overflow-y: hidden;
+          .info_list{
+            margin-top: 10px;
+            .item{
+              border-top: 1px solid $color-dark-grey-shadow;
+            }
+          }
+        }
+        .info_box_active{
+          opacity: 1;
+          overflow-y: hidden;
+        }
+
+      }
+    }
+  }
+}

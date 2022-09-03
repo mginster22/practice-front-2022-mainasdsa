@@ -1,0 +1,54 @@
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+  h2{
+    font-size: 2em;
+    color:#343a40;
+    margin-bottom: 20px;
+  }
+  h3{
+    font-size: 1.2em;
+    margin-bottom: 12px;
+  }
+  h4{
+    font-size: 1.25em;
+    color:#77838f;
+    line-height: 1.7;
+    margin-bottom: 12px;
+
+  }
+  .wrapper_card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content:center;
+  }
+  .card{
+    flex-basis: 200px;
+    text-align: left;
+    border: 1px solid rgb(180, 177, 177);
+    border-radius: 5px;
+    padding: 20px;
+    .heading{
+      display: flex;
+      gap: 5px;
+      margin-bottom: 15px;
+      h6{
+        font-size: 1.2em;
+        color:#343a40;
+
+      }
+     }
+   }
+   p{
+    font-size: 1em;
+    color:#77838f;
+   }
+  @media screen and(max-width:500px){
+    .card{
+      flex-basis: 310px;
+    }
+  } 
+}

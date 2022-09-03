@@ -1,0 +1,30 @@
+[
+  { 
+    "id":1,
+    "img":"constult.svg",
+    "alt":"counsulatan",
+    "heading":"Consultant led",
+    "content":"Work one-on-one with a Squadhelp branding consultant"
+  },
+  { 
+    "id":2,
+    "img":"crow.svg",
+    "alt":"crowdn",
+    "heading":"Crowd powered",
+    "content":"Work with our top rated Creatives and receive a huge breadth of ideas."
+  },
+  { 
+    "id":3,
+    "img":"Audience.svg",
+    "alt":"Audience",
+    "heading":" Trademark Reports",
+    "content":"Get rapid feedback from real people on your shortlist of business names."
+  },
+  { 
+    "id":4,
+    "img":"Trademark.svg",
+    "alt":"Trademark",
+    "heading":"Audience testing",
+    "content":"Comprehensive trademark screening on your shortlisted names"
+  }
+]
